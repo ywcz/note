@@ -1,7 +1,7 @@
-# JVM学习笔记
+# JVM学习笔记(java1.8)
 
 ## 类加载器
-JVM学习笔记支持两种类型的类加载器，分别为**引导类加载器**(Bootstrap ClassLoader) 和**自定义类加载器**(User-Defined ClassLoader)
+JVM支持两种类型的类加载器，分别为**引导类加载器**(Bootstrap ClassLoader) 和**自定义类加载器**(User-Defined ClassLoader)
 所有派生于抽象类ClassLoader的类加载器都划分为自定义类加载器
 
 `Bootstrap Class Loader`(非java语言实现) <== `Extension Class Loader` <== `System Class Loader`<== `User Defined Class Loader`

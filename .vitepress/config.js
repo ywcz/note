@@ -1,5 +1,5 @@
 export default {
-  title: '小潮吧学笔记',
+  title: '小潮吧学习笔记',
   description: '学个鸡儿学.',
   themeConfig: {
     nav: [
@@ -22,9 +22,9 @@ export default {
         ]
       },
       {
-        text: 'Section B',
+        text: 'Java',
         items: [
-          { text: 'Item C', link: '/item-c' },
+          { text: 'JVM', link: '/Java/jvm' },
           { text: 'Item D', link: '/item-d' },
         ]
       }

@@ -1,5 +1,14 @@
 # JVM学习笔记(java1.8)
 
+## 运行时数据区
+运行时数据区 ==> [**方法区**(Method Area)，**虚拟机栈**(VM Stack)，**本地方法栈**(Native Method Stack)，**堆**(heap)，**程序计数器**(Program Counter Register)]
+- 方法区和堆<==>由所有的线程共享
+- 虚拟机栈，本地方法栈，程序计数器<==>线程隔离的数据区
+
+### 程序计数器
+- 较小的内存空间，当前线程所执行的字节码的行号指示器
+- 每个线程都有独立的程序计数器
+
 ## 类加载器
 JVM支持两种类型的类加载器，分别为**引导类加载器**(Bootstrap ClassLoader) 和**自定义类加载器**(User-Defined ClassLoader)
 所有派生于抽象类ClassLoader的类加载器都划分为自定义类加载器

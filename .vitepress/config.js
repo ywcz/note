@@ -15,9 +15,9 @@ export default {
     ],
     sidebar: [
       {
-        text: 'Vue',
+        text: 'Javascript',
         items: [
-          { text: 'Vue3', link: '/vue3' },
+          { text: '现代javascript学习笔记', link: '/jsstudy/index' },
           { text: 'Item B', link: '/item-b' },
         ]
       },

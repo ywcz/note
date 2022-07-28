@@ -1,3 +1,11 @@
+---
+title: 你好阿，大潮吧
+lang: zh-CN
+prev: './throw'
+next: false
+---
+
+
 # JavaScript
 
 ## 装饰器模式
@@ -5,7 +13,7 @@
 ```js
 "use strict";
 function getData(x) {
-  //耗时操作
+    //耗时操作
     return x;
 }
 function cacheGetData(func) {
@@ -44,4 +52,9 @@ console.log(obj.getData(1));
 console.log(obj.getData(2));
 //TypeError: Cannot read properties of undefined (reading 'base') 
 
+
+//================================================
+//修改cacheGetData函数中的一行代码
+let res = func(x); => let res = func.call(this, x);
+//上述报错的地方正常运行
 ```
